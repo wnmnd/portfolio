@@ -6,17 +6,15 @@ This is where I showcase my skills, projects, and achievements in computer scien
 
 You can view the full portfolio website here: [wnmnd.github.io/portfolio](https://wnmnd.github.io/portfolio)  
 
----
 
-## 🚀 About Me  
+## About Me  
 I am a computer science student specializing in data science, with a passion for:  
 - **Machine Learning**  
 - **Data Visualization**  
 - **IoT Development**   
 
----
 
-## 📚 Skills  
+## Skills  
 Here are the core tools and technologies I use in my projects:  
 - **Programming Languages:** Python, R, SQL, C  
 - **Data Analysis & Machine Learning:** TensorFlow, Keras, scikit-learn, pandas, NumPy  
@@ -26,13 +24,11 @@ Here are the core tools and technologies I use in my projects:
 - **Development Environments:** Google Colab, Anaconda  
 - **Deployment:** GitHub  
 
----
 
-## 🌐 Connect with Me  
+## Connect with Me  
 Feel free to reach out for collaborations, opportunities, or just to say hi!  
 - **LinkedIn:** [Wina Munada](https://linkedin.com/in/wina-munada)  
 - **Email:** [winamunada10@gmail.com](mailto:winamunada10@egmail.com)  
 
----
 
 Thank you for visiting!
