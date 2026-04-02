@@ -1,0 +1,490 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Agentic AI Projects - Wina's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.agentic-section {
+				background: white;
+				padding: 60px 20px;
+				border-radius: 8px;
+				margin: 40px 0;
+				color: #000;
+				text-align: center;
+			}
+
+			.agentic-section h2 {
+				color: #000;
+				font-size: 2.5em;
+				margin-bottom: 15px;
+			}
+
+			.agentic-section p {
+				font-size: 1.1em;
+				line-height: 1.6;
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			.project-cards {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: 30px;
+				margin: 40px 0;
+			}
+
+			.project-card {
+				background: white;
+				border-radius: 12px;
+				padding: 30px;
+				box-shadow: 0 10px 30px rgba(92, 64, 51, 0.1);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				border-left: 5px solid #5C4033;
+			}
+
+			.project-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 15px 40px rgba(92, 64, 51, 0.2);
+			}
+
+			.project-card h3 {
+				color: #5C4033;
+				margin-bottom: 15px;
+				font-size: 1.5em;
+			}
+
+			.project-card ul {
+				text-align: left;
+				color: #555;
+				line-height: 2;
+				font-size: 0.95em;
+			}
+
+			.project-card ul li {
+				padding: 5px 0;
+				border-bottom: 1px solid #eee;
+			}
+
+			.project-card ul li:last-child {
+				border-bottom: none;
+			}
+
+			.project-card ul li:before {
+				content: "▸ ";
+				color: #5C4033;
+				font-weight: bold;
+				margin-right: 8px;
+			}
+
+			.demo-section {
+				background: white;
+				padding: 50px 20px;
+				border-radius: 8px;
+				margin: 50px 0;
+			}
+
+			.demo-section h2 {
+				color: #333;
+				text-align: center;
+				margin-bottom: 40px;
+				font-size: 2em;
+			}
+
+			.demo-cards {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 25px;
+			}
+
+			.demo-card {
+				background: white;
+				border-radius: 12px;
+				padding: 25px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				border-top: 4px solid #5C4033;
+			}
+
+			.demo-card h3 {
+				color: #333;
+				margin-bottom: 15px;
+			}
+
+			.demo-card p {
+				color: #666;
+				font-size: 0.95em;
+				margin-bottom: 20px;
+			}
+
+			.demo-card a {
+				display: inline-block;
+				background: linear-gradient(135deg, #5C4033 0%, rgba(92, 64, 51, 0.9) 100%);
+				color: white;
+				padding: 12px 25px;
+				border-radius: 6px;
+				text-decoration: none;
+				transition: opacity 0.3s ease;
+				font-weight: 600;
+			}
+
+			.demo-card a:hover {
+				opacity: 0.9;
+			}
+
+			.ai-knowledge {
+				background: white;
+				color: #000;
+				padding: 50px 30px;
+				border-radius: 8px;
+				margin: 40px 0;
+			}
+
+			.ai-knowledge h2 {
+				color: #000;
+				margin-bottom: 25px;
+				font-size: 2em;
+			}
+
+			.ai-knowledge h3 {
+				color: #5C4033;
+				margin-top: 25px;
+				margin-bottom: 12px;
+				font-size: 1.3em;
+			}
+
+			.ai-knowledge p, .ai-knowledge ul {
+				font-size: 1em;
+				line-height: 1.8;
+				margin-bottom: 15px;
+				color: #000;
+			}
+
+			.ai-knowledge ul li {
+				margin-left: 20px;
+				margin-bottom: 8px;
+			}
+
+			.ai-knowledge ul li:before {
+				content: "✓ ";
+				color: #5C4033;
+				margin-right: 8px;
+			}
+
+			.stats-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+				gap: 20px;
+				margin: 30px 0;
+			}
+
+			.stat-box {
+				background: transparent;
+				padding: 20px;
+				border-radius: 8px;
+				text-align: center;
+				border: 2px solid #5C4033;
+			}
+
+			.stat-box .number {
+				font-size: 2.5em;
+				font-weight: bold;
+				color: #5C4033;
+			}
+
+			.stat-box .label {
+				font-size: 0.9em;
+				margin-top: 10px;
+				opacity: 0.9;
+				color: #000;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Wina's Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li class="active"><a href="agentic-ai.html">Agentic AI</a></li>
+							<li><a href="publications.html">Publications</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/wina-munada/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://instagram.com/wina_munada" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/wnmnd" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro Section -->
+						<div class="agentic-section">
+							<h2>Agentic AI Development</h2>
+							<p>Architecting intelligent autonomous agents that revolutionize business operations through adaptive automation and enterprise-grade AI solutions.</p>
+						</div>
+
+						<!-- Project Overview -->
+						<section style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+							<h3 style="text-align: center; color: #333; margin-bottom: 50px; font-size: 1.8em;">Specialized AI Agent Solutions</h3>
+							
+							<div class="project-cards">
+								<!-- Sales & Data Analyzer -->
+								<div class="project-card">
+									<h3>📊 AI Sales & Data Analyser</h3>
+									<ul>
+										<li>Predictive trend analysis</li>
+										<li>Customer behavior clustering</li>
+										<li>Revenue forecasting</li>
+										<li>Inventory optimization</li>
+									</ul>
+										<p style="margin-top: 15px; color: #5C4033; font-size: 0.9em; font-weight: 600;">Real-time market intelligence for data-driven decisions</p>
+								</div>
+
+								<!-- Finance Agents -->
+								<div class="project-card">
+									<h3>💰 AI Finance Agents</h3>
+									<ul>
+										<li>Accounts Payable automation</li>
+										<li>Accounts Receivable processing</li>
+										<li>Smart Reconciliation</li>
+										<li>Intelligent Reporting</li>
+										<li>Adaptive Budgeting</li>
+										<li>Expense Management</li>
+										<li>Invoice Processing</li>
+									</ul>
+									<p style="margin-top: 15px; color: #5C4033; font-size: 0.9em; font-weight: 600;">End-to-end financial automation & compliance</p>
+								</div>
+
+								<!-- HR Agents -->
+								<div class="project-card">
+									<h3>👥 AI HR Agents</h3>
+									<ul>
+										<li>Intelligent Rostering</li>
+										<li>Automated Payroll</li>
+										<li>Claims Processing</li>
+										<li>Leave Management</li>
+										<li>Smart Recruitment</li>
+										<li>Training Optimization</li>
+									</ul>
+									<p style="margin-top: 15px; color: #5C4033; font-size: 0.9em; font-weight: 600;">Streamline workforce operations & employee experience</p>
+								</div>
+
+								<!-- Inventory Agents -->
+								<div class="project-card">
+									<h3>📦 AI Inventory Agents</h3>
+									<ul>
+										<li>Real-time Stock Monitoring</li>
+										<li>Demand Forecasting</li>
+										<li>Auto-Reordering Systems</li>
+										<li>Warehouse Optimization</li>
+										<li>Dead Stock Identification</li>
+										<li>Supplier Logistics</li>
+									</ul>
+									<p style="margin-top: 15px; color: #5C4033; font-size: 0.9em; font-weight: 600;">Maximize efficiency & minimize waste</p>
+								</div>
+
+								<!-- Procurement Agents -->
+								<div class="project-card">
+									<h3>🎯 AI Procurement Agents</h3>
+									<ul>
+										<li>Intelligent Supplier Discovery</li>
+										<li>Smart Negotiation</li>
+										<li>Advanced Contract Analysis</li>
+										<li>Automated Purchase Orders</li>
+										<li>Spend Analytics</li>
+										<li>Risk Monitoring</li>
+									</ul>
+									<p style="margin-top: 15px; color: #5C4033; font-size: 0.9em; font-weight: 600;">Optimize procurement & reduce costs</p>
+								</div>
+
+								<!-- Policy Control -->
+								<div class="project-card">
+									<h3>📋 AI Policy Document Control</h3>
+									<ul>
+										<li>Intelligent Version Control</li>
+										<li>Compliance Monitoring</li>
+										<li>Smart Distribution</li>
+										<li>Audit Trails</li>
+										<li>Automated Updates</li>
+										<li>Access Control</li>
+									</ul>
+									<p style="margin-top: 15px; color: #5C4033; font-size: 0.9em; font-weight: 600;">Governance & compliance automation</p>
+								</div>
+							</div>
+						</section>
+
+						<!-- Live Demos Section -->
+						<div class="demo-section">
+							<h2>Featured Live Demonstrations</h2>
+							<div class="demo-cards">
+								<div class="demo-card">
+									<h3>🏦 Bank Reconciliation Agent</h3>
+									<p>Watch our intelligent reconciliation system automatically match transactions, identify discrepancies, and generate compliance reports in real-time.</p>
+									<a href="https://drive.google.com/file/d/1EMGBWUu48V-Sm-Vtpz3wlfrniUCkbpTc/view?usp=sharing" target="_blank">View Demo</a>
+								</div>
+
+								<div class="demo-card">
+									<h3>💬 AI Agentic Chat Interface</h3>
+									<p>Experience our conversational AI agents that understand context, execute multi-step workflows, and provide intelligent assistance across domains.</p>
+									<a href="https://drive.google.com/drive/folders/13snZ7HT-KkzDYiXR3rm8vp0fjwSdPZ7V?usp=sharing" target="_blank">View Demos</a>
+								</div>
+
+								<div class="demo-card">
+									<h3>🤝 Intelligent Procurement Agent</h3>
+									<p>Discover how our procurement agent automates supplier identification, negotiation, and contract management for optimal results.</p>
+									<a href="https://drive.google.com/drive/folders/12hdTHpWawirtkkEL1OcuLd4ppmg-YNx6?usp=sharing" target="_blank">View Demos</a>
+								</div>
+
+								<div class="demo-card">
+									<h3>📜 Smart Tendering Agent</h3>
+									<p>See how AI-powered agents analyze tenders, assess requirements, and manage the complete bidding process efficiently.</p>
+									<a href="https://drive.google.com/drive/folders/1nrtaXuNmH4r4gBdwNMoKIt-K-440S-yp?usp=sharing" target="_blank">View Demos</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- AI Knowledge Section -->
+						<div class="ai-knowledge">
+							<h2>Understanding Agentic AI</h2>
+							
+							<p>Agentic AI represents a paradigm shift in artificial intelligence—moving beyond reactive systems to autonomous, goal-oriented agents that can perceive their environment, make decisions, and take actions with minimal human intervention.</p>
+
+							<h3>What are AI Agents?</h3>
+							<p>AI agents are intelligent systems capable of:</p>
+							<ul>
+								<li><strong>Autonomous Decision Making:</strong> Making intelligent choices based on current state and objectives without explicit instructions</li>
+								<li><strong>Multi-Step Planning:</strong> Breaking down complex problems into actionable steps and executing them sequentially</li>
+								<li><strong>Environmental Adaptation:</strong> Learning from feedback and adjusting strategies based on outcomes</li>
+								<li><strong>Tool Integration:</strong> Leveraging external APIs, databases, and services to accomplish tasks</li>
+								<li><strong>Real-time Execution:</strong> Operating continuously with minimal latency for time-sensitive operations</li>
+							</ul>
+
+							<h3>Key Capabilities</h3>
+							<div class="stats-grid">
+								<div class="stat-box">
+									<div class="number">24/7</div>
+									<div class="label">Continuous Operation</div>
+								</div>
+								<div class="stat-box">
+									<div class="number">100%</div>
+									<div class="label">Process Coverage</div>
+								</div>
+								<div class="stat-box">
+									<div class="number">∞</div>
+									<div class="label">Scalability</div>
+								</div>
+								<div class="stat-box">
+									<div class="number">0ms</div>
+									<div class="label">Latency</div>
+								</div>
+							</div>
+
+							<h3>Business Impact</h3>
+							<ul>
+								<li><strong>Operational Efficiency:</strong> Automate repetitive processes, reducing manual effort by 80-95%</li>
+								<li><strong>Error Reduction:</strong> Eliminate human errors through consistent, rule-based decision making</li>
+								<li><strong>Cost Savings:</strong> Significant reduction in operational costs through process automation</li>
+								<li><strong>Scalability:</strong> Handle increasing volumes without proportional resource increases</li>
+								<li><strong>Quality Improvement:</strong> Consistent, high-quality outputs across all operations</li>
+								<li><strong>Competitive Advantage:</strong> First-mover advantage in process automation and digital transformation</li>
+							</ul>
+
+							<h3>Real-World Applications</h3>
+							<p>Our agentic AI solutions are transforming industries:</p>
+							<ul>
+								<li><strong>Finance:</strong> Automated reconciliation, invoice processing, and financial reporting</li>
+								<li><strong>Supply Chain:</strong> Demand forecasting, inventory optimization, and supplier management</li>
+								<li><strong>HR Operations:</strong> Payroll automation, recruitment, and employee management</li>
+								<li><strong>Procurement:</strong> Supplier discovery, contract analysis, and cost optimization</li>
+								<li><strong>Compliance:</strong> Policy management, audit trails, and regulatory reporting</li>
+								<li><strong>Customer Service:</strong> Intelligent chatbots and automated issue resolution</li>
+							</ul>
+
+							<h3>Technology Stack</h3>
+							<p>Built with cutting-edge frameworks and technologies:</p>
+							<ul>
+								<li><strong>Large Language Models (LLMs):</strong> GPT-4, Claude, and other advanced models for natural language understanding</li>
+								<li><strong>Agent Frameworks:</strong> LangChain, CrewAI, AutoGen for agent orchestration</li>
+								<li><strong>Vector Databases:</strong> Semantic search and knowledge retrieval systems</li>
+								<li><strong>Integration APIs:</strong> Seamless connection with enterprise systems and tools</li>
+								<li><strong>Monitoring & Observability:</strong> Real-time performance tracking and audit logging</li>
+							</ul>
+						</div>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer" style="background-color: #2E2E2E; color: #ccc; padding: 40px 20px;">
+					<div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+				
+						<!-- Left Column -->
+						<div style="flex: 1; min-width: 300px; padding: 10px;">
+							<h3 style="color: #fff;">My Location</h3>
+						<p>Damansara Perdana,<br>
+						Petaling Jaya,<br>
+						Selangor</p>
+							<p><span style="display: flex; align-items: center;">(60) 19 606 2636</span></p>
+							<p><span style="display: flex; align-items: center;">winamunada10@gmail.com</span></p>
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/wina-munada/" class="icon brands alt fa-linkedin"><span class="label">Facebook</span></a></li>
+									<li><a href="https://instagram.com/wina_munada" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/wnmnd" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</div>
+						</div>
+				
+						<!-- Middle Column -->
+						<div style="flex: 1; min-width: 300px; padding: 10px;">
+							<h3 style="color: #fff;">Projects</h3>
+							<ul style="list-style: none; padding: 0; margin: 0;">
+								<li><a href="agentic-ai.html" style="color: #ccc; text-decoration: none;">Agentic AI</a></li>
+								<li><a href="https://github.com/wnmnd/Waste-Segregation-Using-CNN" style="color: #ccc; text-decoration: none;">Waste Segregation</a></li>
+								<li><a href="https://github.com/wnmnd/MRI-alzheimer-classification" style="color: #ccc; text-decoration: none;">Alzheimer Classification</a></li>
+								<li><a href="https://github.com/wnmnd/diabetes-prediction-webapp" style="color: #ccc; text-decoration: none;">Diabetes Classification</a></li>
+							</ul>
+						</div>
+				
+						<!-- Right Column -->
+						<div style="flex: 1; min-width: 150px; padding: 10px;">
+							<h3 style="color: #fff;">Quick Links</h3>
+							<ul style="list-style: none; padding: 0; margin: 0;">
+								<li><a href="publications.html" style="color: #ccc; text-decoration: none;">Publications</a></li>
+								<li><a href="about.html" style="color: #ccc; text-decoration: none;">About Me</a></li>
+							</ul>
+						</div>
+				
+					</div>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
